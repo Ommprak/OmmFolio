@@ -76,8 +76,10 @@ export default function ProjectDetail({ projectId }: ProjectDetailProps) {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
+  const project = projectData[parseInt(projectId) as keyof typeof projectData];
+  
   const getGalleryImages = () => {
-    if (project.id === 1) {
+    if (project?.id === 1) {
       // Lunara brand designs only
       return [
         'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261821/Generated_Image_September_07_2025_-_12_22PM_x2sdww.jpg',
@@ -85,7 +87,7 @@ export default function ProjectDetail({ projectId }: ProjectDetailProps) {
         'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261821/Generated_Image_September_07_2025_-_12_23PM_ahsys9.jpg',
         'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261821/Generated_Image_September_07_2025_-_12_23PM_1_jzxyyr.jpg'
       ];
-    } else if (project.id === 2) {
+    } else if (project?.id === 2) {
       // Magazine designs only
       return [
         'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261824/Double_Overhead_Magazine_Mockup_03_lgvazm.jpg',
@@ -93,7 +95,7 @@ export default function ProjectDetail({ projectId }: ProjectDetailProps) {
         'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261822/magazine_ngur74.jpg',
         'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261819/Double_Overhead_Magazine_Mockup_01_ip28xk.jpg'
       ];
-    } else if (project.id === 3) {
+    } else if (project?.id === 3) {
       // Mobile app designs
       return [
         'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261821/Generated_Image_September_07_2025_-_12_42PM_al0gpu.jpg',
@@ -127,8 +129,6 @@ export default function ProjectDetail({ projectId }: ProjectDetailProps) {
       setSelectedImage(galleryImages[newIndex]);
     }
   };
-  
-  const project = projectData[parseInt(projectId) as keyof typeof projectData];
   
   if (!project) {
     return (
