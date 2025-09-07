@@ -56,7 +56,7 @@ export default function Projects() {
               transition={{ duration: 0.8, delay: index * 0.3 }}
             >
               <img
-                src={project.image}
+                src={project.id === 1 ? "https://res.cloudinary.com/dbdnjaewg/image/upload/v1757242179/Generated_Image_September_07_2025_-_12_20PM_pxjjms.jpg" : project.image}
                 alt={`${project.title} Project Screenshot`}
                 className="rounded-xl shadow-lg hover-lift w-full h-auto"
                 data-testid={`project-image-${project.id}`}
