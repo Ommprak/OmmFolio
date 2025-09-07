@@ -1,8 +1,14 @@
 import { motion } from 'framer-motion';
 import { useIntersectionObserver } from '@/hooks/use-intersection-observer';
+import { useLocation } from 'wouter';
 
 export default function Projects() {
   const { ref, isIntersecting } = useIntersectionObserver();
+  const [, navigate] = useLocation();
+
+  const handleViewProject = (projectId: number) => {
+    navigate(`/project/${projectId}`);
+  };
 
   const projects = [
     {
@@ -90,6 +96,7 @@ export default function Projects() {
                 className="glass rounded-lg px-6 py-3 hover:glow transition-all duration-300 flex items-center gap-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
+                onClick={() => handleViewProject(project.id)}
                 data-testid={`project-button-${project.id}`}
               >
                 <span>View Project</span>
