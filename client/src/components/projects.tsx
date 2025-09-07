@@ -13,10 +13,10 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: 'Lunara',
-      description: 'Lunara represents a sophisticated e-commerce brand identity and visual design system crafted entirely in Photoshop. The design process began with comprehensive mood boarding, color psychology research, and typography exploration to establish the brand\'s premium aesthetic. Through meticulous wireframing and user journey mapping, I created an intuitive shopping experience that prioritizes visual hierarchy and conversion-focused layouts. The design showcases advanced Photoshop techniques including layer masking, blend modes, smart objects, and custom brush creation for unique textures. The visual identity features a carefully curated color palette, custom iconography, and modern typography that embodies luxury and accessibility. Key design elements include gradient overlays, glassmorphism effects, and subtle micro-animations concepts that enhance user engagement and brand memorability.',
+      title: 'Branding',
+      description: 'Comprehensive brand identity and visual design solutions that create memorable and impactful brand experiences. This project showcases expertise in developing cohesive brand systems through strategic design thinking, visual storytelling, and creative execution. The work encompasses logo design, brand guidelines, typography systems, color palettes, and visual identity applications across various touchpoints.',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400',
-      tech: ['Photoshop', 'UI/UX Design', 'Brand Identity', 'Visual Systems'],
+      tech: ['Brand Identity', 'Logo Design', 'Visual Systems', 'Typography'],
       imageLeft: true
     },
     {

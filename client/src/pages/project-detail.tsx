@@ -11,8 +11,8 @@ interface ProjectDetailProps {
 const projectData = {
   1: {
     id: 1,
-    title: 'Lunara',
-    description: 'Lunara represents a sophisticated e-commerce brand identity and visual design system crafted entirely in Photoshop. The design process began with comprehensive mood boarding, color psychology research, and typography exploration to establish the brand\'s premium aesthetic. Through meticulous wireframing and user journey mapping, I created an intuitive shopping experience that prioritizes visual hierarchy and conversion-focused layouts. The design showcases advanced Photoshop techniques including layer masking, blend modes, smart objects, and custom brush creation for unique textures. The visual identity features a carefully curated color palette, custom iconography, and modern typography that embodies luxury and accessibility. Key design elements include gradient overlays, glassmorphism effects, and subtle micro-animations concepts that enhance user engagement and brand memorability.',
+    title: 'Branding',
+    description: 'Comprehensive brand identity and visual design solutions that transform businesses through strategic creative direction and cohesive visual systems. This extensive branding project demonstrates expertise in developing memorable brand experiences from concept to execution. The work encompasses strategic brand positioning, visual identity development, logo design, typography systems, color palette creation, and brand guideline documentation. Each element is carefully crafted to ensure consistency across all brand touchpoints while maintaining flexibility for future growth and adaptation.',
     images: [
       'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261822/Generated_Image_September_07_2025_-_12_23PM_2_w9ly8l.jpg',
       'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261821/Generated_Image_September_07_2025_-_12_23PM_ahsys9.jpg',
@@ -20,14 +20,14 @@ const projectData = {
       'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261821/Generated_Image_September_07_2025_-_12_42PM_al0gpu.jpg',
       'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261820/Generated_Image_September_07_2025_-_12_19PM_lr8he3.jpg'
     ],
-    tech: ['Photoshop', 'UI/UX Design', 'Brand Identity', 'Visual Systems'],
+    tech: ['Brand Identity', 'Logo Design', 'Visual Systems', 'Typography', 'Brand Strategy'],
     features: [
-      'Brand Identity Development',
-      'Color Palette Creation',
-      'Typography System',
-      'Custom Iconography',
-      'Wireframing & Prototyping',
-      'Visual Hierarchy Design'
+      'Logo Design & Development',
+      'Brand Strategy & Positioning',
+      'Visual Identity Systems',
+      'Typography & Color Palettes',
+      'Brand Guidelines Creation',
+      'Marketing Material Design'
     ]
   },
   2: {
