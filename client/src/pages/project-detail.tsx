@@ -54,7 +54,9 @@ const projectData = {
     id: 3,
     title: 'Own Design Collection',
     description: 'A curated showcase of personal design projects that reflect individual creative vision and artistic exploration. This collection features experimental compositions, unique visual concepts, and innovative design approaches that push creative boundaries. Each piece represents a journey of artistic discovery, combining traditional design principles with contemporary aesthetics. The work encompasses various design disciplines including digital art, conceptual design, and visual experimentation, showcasing versatility and creative range in personal artistic expression.',
-    images: [],
+    images: [
+      'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757267756/Generated_Image_September_07_2025_-_11_24PM_gbnob0.jpg'
+    ],
     tech: ['Creative Design', 'Visual Arts', 'Personal Projects', 'Experimental Design'],
     features: [
       'Unique Creative Concepts',
