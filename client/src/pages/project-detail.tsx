@@ -80,12 +80,22 @@ export default function ProjectDetail({ projectId }: ProjectDetailProps) {
   
   const getGalleryImages = () => {
     if (project?.id === 1) {
-      // Lunara brand designs only
+      // Lunara brand designs only - all 13 uploaded designs
       return [
         'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261821/Generated_Image_September_07_2025_-_12_22PM_x2sdww.jpg',
         'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261822/Generated_Image_September_07_2025_-_12_23PM_2_w9ly8l.jpg',
         'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261821/Generated_Image_September_07_2025_-_12_23PM_ahsys9.jpg',
-        'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261821/Generated_Image_September_07_2025_-_12_23PM_1_jzxyyr.jpg'
+        'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261821/Generated_Image_September_07_2025_-_12_23PM_1_jzxyyr.jpg',
+        'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261821/Generated_Image_September_07_2025_-_12_42PM_al0gpu.jpg',
+        'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261820/Generated_Image_September_07_2025_-_12_19PM_lr8he3.jpg',
+        'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261820/Generated_Image_September_07_2025_-_12_41PM_g45wg9.jpg',
+        'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261820/Generated_Image_September_07_2025_-_12_40PM_ny2xpw.jpg',
+        'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261819/Generated_Image_September_07_2025_-_12_39PM_oqquns.jpg',
+        'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261822/Generated_Image_September_07_2025_-_12_45PM_xz84t7.jpg',
+        'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261818/Generated_Image_September_07_2025_-_12_37PM_afzg0k.jpg',
+        'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261816/Generated_Image_September_07_2025_-_12_31PM_nd7odo.jpg',
+        'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261815/Generated_Image_September_07_2025_-_12_25PM_eshv7i.jpg',
+        'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261815/Generated_Image_September_07_2025_-_12_27PM_e7jyum.jpg'
       ];
     } else if (project?.id === 2) {
       // Magazine designs only
