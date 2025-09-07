@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useIntersectionObserver } from '@/hooks/use-intersection-observer';
-import { useMutation } from '@tanstack/react-query';
-import { apiRequest } from '@/lib/queryClient';
 import { useToast } from '@/hooks/use-toast';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -23,34 +21,32 @@ export default function Contact() {
     message: ''
   });
 
-  const contactMutation = useMutation({
-    mutationFn: (data: ContactFormData) =>
-      apiRequest('POST', '/api/contact', data),
-    onSuccess: () => {
-      toast({
-        title: 'Message Sent!',
-        description: 'Thank you for your message. I\'ll get back to you soon.',
-      });
-      setFormData({ name: '', email: '', message: '' });
-    },
-    onError: (error) => {
-      toast({
-        title: 'Error',
-        description: 'Failed to send message. Please try again.',
-        variant: 'destructive',
-      });
-    },
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (formData.name && formData.email && formData.message) {
-      contactMutation.mutate(formData);
-    } else {
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        toast({
+          title: "Message sent successfully!",
+          description: "Thank you for your message. I'll get back to you soon.",
+        });
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        throw new Error('Failed to send message');
+      }
+    } catch (error) {
       toast({
-        title: 'Missing Fields',
-        description: 'Please fill in all fields.',
-        variant: 'destructive',
+        title: "Failed to send message",
+        description: "Please try again later.",
+        variant: "destructive",
       });
     }
   };
@@ -83,9 +79,9 @@ export default function Contact() {
         >
           Get In Touch
         </motion.h2>
-        
+
         <div className="grid md:grid-cols-2 gap-12 items-start">
-          
+
           {/* Left: Social Icons */}
           <motion.div
             className="space-y-8"
@@ -101,7 +97,7 @@ export default function Contact() {
                 Ready to bring your ideas to life? Let's collaborate on something amazing.
               </p>
             </div>
-            
+
             <div className="space-y-4">
               {socialLinks.map((link, index) => (
                 <motion.a
@@ -148,7 +144,7 @@ export default function Contact() {
                   data-testid="contact-name-input"
                 />
               </motion.div>
-              
+
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
@@ -168,7 +164,7 @@ export default function Contact() {
                   data-testid="contact-email-input"
                 />
               </motion.div>
-              
+
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
@@ -188,7 +184,7 @@ export default function Contact() {
                   data-testid="contact-message-input"
                 />
               </motion.div>
-              
+
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
@@ -197,10 +193,9 @@ export default function Contact() {
                 <Button
                   type="submit"
                   className="w-full bg-accent text-accent-foreground hover:glow transition-all duration-300"
-                  disabled={contactMutation.isPending}
                   data-testid="contact-submit-button"
                 >
-                  {contactMutation.isPending ? 'Sending...' : 'Send Message'}
+                  Send Message
                 </Button>
               </motion.div>
             </form>
