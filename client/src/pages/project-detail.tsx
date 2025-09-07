@@ -203,38 +203,6 @@ export default function ProjectDetail({ projectId }: ProjectDetailProps) {
             </div>
           </motion.div>
 
-          {/* Image Gallery */}
-          <motion.div
-            className="mb-16"
-            initial={{ opacity: 0, y: 30 }}
-            animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.6 }}
-          >
-            <h2 className="text-3xl font-bold mb-8 text-center glow-text">Project Gallery</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {galleryImages.map((image, index) => (
-                <motion.div
-                  key={index}
-                  className="relative group cursor-pointer"
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={isIntersecting ? { opacity: 1, scale: 1 } : {}}
-                  transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
-                  onClick={() => openImageModal(image, index)}
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  <img
-                    src={image}
-                    alt={`${project.title} - Image ${index + 1}`}
-                    className="w-full h-64 object-cover rounded-xl shadow-lg hover-lift"
-                  />
-                  <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl flex items-center justify-center">
-                    <i className="ph ph-magnifying-glass-plus text-3xl text-white"></i>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
         </div>
       </main>
       
