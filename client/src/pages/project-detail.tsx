@@ -105,8 +105,10 @@ export default function ProjectDetail({ projectId }: ProjectDetailProps) {
         'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261819/Double_Overhead_Magazine_Mockup_01_ip28xk.jpg'
       ];
     } else if (project?.id === 3) {
-      // Own design collection - empty for now, user will upload specific designs
-      return [];
+      // Own design collection
+      return [
+        'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757267756/Generated_Image_September_07_2025_-_11_24PM_gbnob0.jpg'
+      ];
     }
     return [];
   };
