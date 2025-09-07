@@ -134,9 +134,9 @@ export default function Gallery() {
       <div className="container mx-auto px-6">
         <motion.h2
           className="text-4xl font-bold text-center mb-16 glow-text"
-          initial={{ opacity: 0, y: 30 }}
-          animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
+          initial={{ opacity: 0, x: -100 }}
+          animate={isIntersecting ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 0.8, ease: "easeOut" }}
           data-testid="gallery-title"
         >
           Design Gallery
