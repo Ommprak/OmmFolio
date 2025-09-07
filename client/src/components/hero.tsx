@@ -16,27 +16,7 @@ export default function Hero() {
         />
       </div>
       
-      {/* Overlay content */}
-      <div className="relative z-20 text-center px-6">
-        <motion.h1
-          className="text-6xl md:text-8xl font-bold mb-4 glow-text"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.5 }}
-          data-testid="hero-title"
-        >
-          Omm Prakash Nayak
-        </motion.h1>
-        <motion.p
-          className="text-xl md:text-2xl text-muted-foreground"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.8 }}
-          data-testid="hero-subtitle"
-        >
-          Full Stack Developer & 3D Creator
-        </motion.p>
-      </div>
+      
     </section>
   );
 }
