@@ -29,10 +29,10 @@ export default function Projects() {
     },
     {
       id: 3,
-      title: 'Mobile Analytics App',
-      description: 'Cross-platform mobile application for data analytics with real-time charts, push notifications, and offline capabilities using React Native.',
+      title: 'Own Design Collection',
+      description: 'A curated showcase of personal design projects featuring unique creative concepts, experimental visual compositions, and innovative design solutions. This collection represents individual artistic expression and creative exploration across various design disciplines.',
       image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400',
-      tech: ['React Native', 'TypeScript', 'Firebase'],
+      tech: ['Creative Design', 'Visual Arts', 'Personal Projects'],
       imageLeft: true
     }
   ];

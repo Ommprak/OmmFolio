@@ -52,20 +52,17 @@ const projectData = {
   },
   3: {
     id: 3,
-    title: 'Mobile Analytics App',
-    description: 'Cross-platform mobile application design with focus on data visualization and user experience.',
-    images: [
-      'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261818/Generated_Image_September_07_2025_-_12_37PM_afzg0k.jpg',
-      'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261816/Generated_Image_September_07_2025_-_12_31PM_nd7odo.jpg',
-      'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261815/Generated_Image_September_07_2025_-_12_25PM_eshv7i.jpg',
-      'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261815/Generated_Image_September_07_2025_-_12_27PM_e7jyum.jpg'
-    ],
-    tech: ['Mobile Design', 'Data Visualization', 'UX Research'],
+    title: 'Own Design Collection',
+    description: 'A curated showcase of personal design projects that reflect individual creative vision and artistic exploration. This collection features experimental compositions, unique visual concepts, and innovative design approaches that push creative boundaries. Each piece represents a journey of artistic discovery, combining traditional design principles with contemporary aesthetics. The work encompasses various design disciplines including digital art, conceptual design, and visual experimentation, showcasing versatility and creative range in personal artistic expression.',
+    images: [],
+    tech: ['Creative Design', 'Visual Arts', 'Personal Projects', 'Experimental Design'],
     features: [
-      'Mobile-First Design',
-      'Data Dashboard',
-      'User Interface',
-      'Responsive Layout'
+      'Unique Creative Concepts',
+      'Experimental Visual Compositions',
+      'Personal Artistic Expression',
+      'Innovative Design Solutions',
+      'Creative Exploration',
+      'Visual Storytelling'
     ]
   }
 };
@@ -106,13 +103,8 @@ export default function ProjectDetail({ projectId }: ProjectDetailProps) {
         'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261819/Double_Overhead_Magazine_Mockup_01_ip28xk.jpg'
       ];
     } else if (project?.id === 3) {
-      // Mobile app designs
-      return [
-        'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261821/Generated_Image_September_07_2025_-_12_42PM_al0gpu.jpg',
-        'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261820/Generated_Image_September_07_2025_-_12_19PM_lr8he3.jpg',
-        'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261820/Generated_Image_September_07_2025_-_12_41PM_g45wg9.jpg',
-        'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261823/virat_kohli_lpwecx.jpg'
-      ];
+      // Own design collection - empty for now, user will upload specific designs
+      return [];
     }
     return [];
   };
