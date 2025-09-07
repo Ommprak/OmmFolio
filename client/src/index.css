@@ -15,7 +15,7 @@
   --secondary: hsl(217, 32%, 17%);
   --secondary-foreground: hsl(0, 0%, 100%);
   --muted: hsl(217, 32%, 17%);
-  --muted-foreground: hsl(0, 0%, 100%);
+  --muted-foreground: hsl(210, 40%, 80%);
   --accent: hsl(203, 75%, 86%);
   --accent-foreground: hsl(222, 84%, 4.9%);
   --destructive: hsl(0, 84%, 60%);
@@ -44,7 +44,7 @@
   --secondary: hsl(217, 32%, 17%);
   --secondary-foreground: hsl(0, 0%, 100%);
   --muted: hsl(217, 32%, 17%);
-  --muted-foreground: hsl(0, 0%, 100%);
+  --muted-foreground: hsl(210, 40%, 80%);
   --accent: hsl(203, 75%, 86%);
   --accent-foreground: hsl(222, 84%, 4.9%);
   --destructive: hsl(0, 84%, 60%);
@@ -63,6 +63,7 @@
     @apply bg-portfolio-bg text-foreground font-inter antialiased;
     font-family: 'Inter', system-ui, sans-serif;
     overflow-x: hidden;
+    color: hsl(0, 0%, 100%);
   }
 }
 
