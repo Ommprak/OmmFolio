@@ -113,7 +113,7 @@ export default function ProjectDetail({ projectId }: ProjectDetailProps) {
     }
   };
   
-  const project = projectData[projectId as keyof typeof projectData];
+  const project = projectData[parseInt(projectId) as keyof typeof projectData];
   
   if (!project) {
     return (
