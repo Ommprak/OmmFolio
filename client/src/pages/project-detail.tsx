@@ -203,6 +203,39 @@ export default function ProjectDetail({ projectId }: ProjectDetailProps) {
             </div>
           </motion.div>
 
+          {/* Photo Gallery */}
+          <motion.div
+            className="mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8, delay: 0.6 }}
+          >
+            <h2 className="text-3xl font-bold mb-8 text-center glow-text">Photo Gallery</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {[
+                'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261824/Double_Overhead_Magazine_Mockup_03_lgvazm.jpg',
+                'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261822/magazine_cover_free_mockup_vol2_miaoad.jpg',
+                'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261822/magazine_ngur74.jpg',
+                'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261819/Double_Overhead_Magazine_Mockup_01_ip28xk.jpg'
+              ].map((image, index) => (
+                <motion.div
+                  key={index}
+                  className="relative group"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={isIntersecting ? { opacity: 1, scale: 1 } : {}}
+                  transition={{ duration: 0.5, delay: 0.8 + index * 0.1 }}
+                >
+                  <img
+                    src={image}
+                    alt={`${project.title} - Photo ${index + 1}`}
+                    className="w-full h-80 object-cover rounded-xl shadow-lg hover-lift"
+                  />
+                  <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
         </div>
       </main>
       
