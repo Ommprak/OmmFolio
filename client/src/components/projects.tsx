@@ -23,7 +23,7 @@ export default function Projects() {
       id: 2,
       title: 'Creative Magazine Design',
       description: 'Professional magazine layouts and editorial designs featuring modern typography, visual hierarchy, and stunning photography. Specialized in lifestyle, fashion, and business publications.',
-      image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400',
+      image: 'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757263171/Generated_Image_September_07_2025_-_10_07PM_zw9j1c.jpg',
       tech: ['InDesign', 'Photoshop', 'Typography'],
       imageLeft: false
     },
