@@ -5,10 +5,10 @@ export default function About() {
   const { ref, isIntersecting } = useIntersectionObserver();
 
   const skills = [
-    { name: 'HTML', icon: 'ph-file-html' },
-    { name: 'CSS', icon: 'ph-file-css' },
-    { name: 'JavaScript', icon: 'ph-file-js' },
-    { name: 'React', icon: 'ph-atom' },
+    { name: 'Figma', icon: 'ph-figma-logo' },
+    { name: 'Photoshop', icon: 'ph-image' },
+    { name: 'Illustrator', icon: 'ph-palette' },
+    { name: 'Sketch', icon: 'ph-pen-nib' },
     { name: 'Spline', icon: 'ph-cube' }
   ];
 
