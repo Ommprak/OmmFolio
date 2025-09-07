@@ -32,20 +32,22 @@ const projectData = {
   },
   2: {
     id: 2,
-    title: '3D Portfolio Showcase',
-    description: 'An immersive 3D portfolio experience featuring cutting-edge design concepts and interactive visual elements.',
+    title: 'Creative Magazine Design',
+    description: 'Professional magazine layouts and editorial designs that blend modern typography with compelling visual storytelling. This comprehensive project showcases expertise in creating cohesive design systems for lifestyle, fashion, and business publications. The work demonstrates advanced skills in grid systems, typographic hierarchy, color theory, and visual flow. Each spread is meticulously crafted to enhance readability while maintaining aesthetic appeal. The project includes cover designs, feature articles, photo layouts, and advertising placements that work harmoniously together to create engaging reader experiences.',
     images: [
       'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261820/Generated_Image_September_07_2025_-_12_41PM_g45wg9.jpg',
       'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261820/Generated_Image_September_07_2025_-_12_40PM_ny2xpw.jpg',
       'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261819/Generated_Image_September_07_2025_-_12_39PM_oqquns.jpg',
       'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261822/Generated_Image_September_07_2025_-_12_45PM_xz84t7.jpg'
     ],
-    tech: ['3D Design', 'Visual Effects', 'Interactive Design'],
+    tech: ['InDesign', 'Photoshop', 'Typography', 'Editorial Design'],
     features: [
-      '3D Model Creation',
-      'Interactive Elements',
-      'Visual Effects',
-      'Immersive Experience'
+      'Magazine Layout Design',
+      'Typography Systems',
+      'Photo Direction & Editing',
+      'Print Production Ready',
+      'Brand Identity Integration',
+      'Multi-page Spreads'
     ]
   },
   3: {

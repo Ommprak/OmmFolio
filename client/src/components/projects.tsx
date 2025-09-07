@@ -21,10 +21,10 @@ export default function Projects() {
     },
     {
       id: 2,
-      title: '3D Portfolio Showcase',
-      description: 'An immersive 3D portfolio experience using Spline and Three.js. Features interactive models, particle systems, and WebGL animations.',
+      title: 'Creative Magazine Design',
+      description: 'Professional magazine layouts and editorial designs featuring modern typography, visual hierarchy, and stunning photography. Specialized in lifestyle, fashion, and business publications.',
       image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400',
-      tech: ['Three.js', 'Spline', 'WebGL'],
+      tech: ['InDesign', 'Photoshop', 'Typography'],
       imageLeft: false
     },
     {
