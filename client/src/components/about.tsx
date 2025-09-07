@@ -45,10 +45,12 @@ export default function About() {
               About Me
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed" data-testid="about-description">
-              I'm a passionate full-stack developer with expertise in modern web technologies 
-              and 3D design. I create immersive digital experiences that blend cutting-edge 
-              technology with stunning visual design. My focus is on building scalable, 
-              user-centric applications that push the boundaries of what's possible on the web.
+              I'm a creative graphic designer with a passion for turning ideas into impactful visuals. 
+              From crafting unique brand identities and engaging social media designs to producing 
+              clean layouts and stunning digital artwork, I focus on blending creativity with functionality. 
+              With an eye for detail and a strong sense of aesthetics, I aim to create designs that not 
+              only look appealing but also communicate stories effectively. My journey in design has been 
+              about exploring colors, typography, and visual harmony to deliver designs that leave a lasting impression.
             </p>
             
             {/* Skills Icons */}
