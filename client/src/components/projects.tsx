@@ -8,9 +8,9 @@ export default function Projects() {
     {
       id: 1,
       title: 'Lunara',
-      description: 'A comprehensive e-commerce platform featuring an elegant, user-centric design crafted with Photoshop for pixel-perfect mockups and prototypes. The design process involved extensive wireframing, user journey mapping, and creating a cohesive visual language with custom iconography and typography. Using advanced Photoshop techniques including layer masking, blend modes, and smart objects, I developed a complete design system with color palettes, spacing guidelines, and component libraries. The platform showcases modern design principles with gradient overlays, glassmorphism effects, and micro-interactions. This full-stack solution combines React, Node.js, and MongoDB to deliver seamless shopping experiences, while the UI/UX design ensures optimal conversion rates through strategic placement of call-to-action elements and intuitive navigation patterns.',
+      description: 'Lunara represents a sophisticated e-commerce brand identity and visual design system crafted entirely in Photoshop. The design process began with comprehensive mood boarding, color psychology research, and typography exploration to establish the brand\'s premium aesthetic. Through meticulous wireframing and user journey mapping, I created an intuitive shopping experience that prioritizes visual hierarchy and conversion-focused layouts. The design showcases advanced Photoshop techniques including layer masking, blend modes, smart objects, and custom brush creation for unique textures. The visual identity features a carefully curated color palette, custom iconography, and modern typography that embodies luxury and accessibility. Key design elements include gradient overlays, glassmorphism effects, and subtle micro-animations concepts that enhance user engagement and brand memorability.',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400',
-      tech: ['React', 'Node.js', 'MongoDB', 'Photoshop'],
+      tech: ['Photoshop', 'UI/UX Design', 'Brand Identity', 'Visual Systems'],
       imageLeft: true
     },
     {
