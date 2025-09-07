@@ -7,10 +7,10 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include real-time inventory, payment integration, and admin dashboard.',
+      title: 'Lunara',
+      description: 'A comprehensive e-commerce platform featuring an elegant, user-centric design crafted with Photoshop for pixel-perfect mockups and prototypes. This full-stack solution combines React, Node.js, and MongoDB to deliver seamless shopping experiences. Key features include real-time inventory management, secure payment integration, advanced admin dashboard, custom product configurators, and responsive design optimized for all devices. The visual identity and UI components were meticulously designed in Photoshop, ensuring brand consistency and aesthetic appeal throughout the platform.',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400',
-      tech: ['React', 'Node.js', 'MongoDB'],
+      tech: ['React', 'Node.js', 'MongoDB', 'Photoshop'],
       imageLeft: true
     },
     {
