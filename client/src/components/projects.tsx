@@ -31,7 +31,7 @@ export default function Projects() {
       id: 3,
       title: 'Own Design Collection',
       description: 'A curated showcase of personal design projects featuring unique creative concepts, experimental visual compositions, and innovative design solutions. This collection represents individual artistic expression and creative exploration across various design disciplines.',
-      image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400',
+      image: 'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757264943/Generated_Image_September_07_2025_-_10_38PM_frkxp8.jpg',
       tech: ['Creative Design', 'Visual Arts', 'Personal Projects'],
       imageLeft: true
     }
