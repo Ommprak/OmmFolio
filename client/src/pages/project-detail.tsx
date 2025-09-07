@@ -80,7 +80,8 @@ export default function ProjectDetail({ projectId }: ProjectDetailProps) {
     'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261824/Double_Overhead_Magazine_Mockup_03_lgvazm.jpg',
     'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261822/magazine_cover_free_mockup_vol2_miaoad.jpg',
     'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261822/magazine_ngur74.jpg',
-    'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261819/Double_Overhead_Magazine_Mockup_01_ip28xk.jpg'
+    'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261819/Double_Overhead_Magazine_Mockup_01_ip28xk.jpg',
+    'https://res.cloudinary.com/dbdnjaewg/image/upload/v1757261823/virat_kohli_lpwecx.jpg'
   ];
   
   const openImageModal = (imageUrl: string, index: number) => {
